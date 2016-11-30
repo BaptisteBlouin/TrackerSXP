@@ -7,7 +7,7 @@ import java.net.URL;
 import java.net.URLConnection;
 
 /**
- * Class qui permet l'echange d'adresse ip
+ * Classe qui permet l'echange d'adresse ip
  */
 public class Tracker {
     private String ressourcesFolder = "src/main/ressources/";
@@ -15,8 +15,8 @@ public class Tracker {
     private String ipClient = ressourcesFolder + "ips.txt";
 
     /**
-     * methode qui éxecute les requetes d'echange d'adresse ip
-     * @return un tableau de String contenant les adresses ip des autres utilisateur
+     * Methode qui éxecute les requetes d'echange d'adresse ip
+     * @return un tableau de String contenant les adresses ip des autres utilisateurs
      */
     public String [] requete(){
         String[] ips = new String[0];
@@ -30,7 +30,7 @@ public class Tracker {
             String ipServeur;
             boolean goodUrl = false;
             String result = "";
-            while ((ipServeur = buff.readLine()) != null && goodUrl == false ) {//essaye de se connecter a un serveur opérationnel
+            while ((ipServeur = buff.readLine()) != null && goodUrl == false ) {// essaye de se connecter a un serveur opérationnel
                 try {
 
                     String urlRequest = "http://" + ipServeur + ":3000/request/" + ip;
