@@ -1,1 +1,1 @@
-# SXP
+Chech the wiki
