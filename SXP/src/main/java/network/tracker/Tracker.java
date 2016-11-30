@@ -7,7 +7,7 @@ import java.net.URL;
 import java.net.URLConnection;
 
 /**
- * class qui permet l'echange d'adresse ip
+ * Class qui permet l'echange d'adresse ip
  */
 public class Tracker {
     private String ressourcesFolder = "src/main/ressources/";
