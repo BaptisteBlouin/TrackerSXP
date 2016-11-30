@@ -22,8 +22,7 @@ public class Tracker {
         String[] ips = new String[0];
         try {
             URL whatismyip = new URL("http://checkip.amazonaws.com");
-            BufferedReader in2 = new BufferedReader(new InputStreamReader(whatismyip.openStream()));
-            String ip = in2.readLine();
+            BufferedReader in2 = new BufferedReader(new InputStreamReader(whatismyip.openStream()));            String ip = in2.readLine();
 
             FileInputStream file = new FileInputStream(ipServeur);
             BufferedReader buff = new BufferedReader(new InputStreamReader(file));
@@ -55,7 +54,7 @@ public class Tracker {
                 }
             }
 
-            if (goodUrl == true) {//si on a reussi a ce connecter a un serveur on met a jour la liste des adresses ip en local
+            if (goodUrl == true) {//si on a reussi a se connecter a un serveur on met a jour la liste des adresses ip en local
                 BufferedWriter out;
                 out = new BufferedWriter(new FileWriter(ipClient));
                 out.write("");
@@ -65,7 +64,7 @@ public class Tracker {
                     out.write(ips[i] + "\n");
                 }
             } else {
-                file = new FileInputStream(ipClient);//si les connections au serveurs ont echouées alors on lit dans le fichier local
+                file = new FileInputStream(ipClient);//si les connections au serveur ont echoué alors on lit dans le fichier local
                 buff = new BufferedReader(new InputStreamReader(file));
                 String line;
                 while ((line = buff.readLine()) != null) {
