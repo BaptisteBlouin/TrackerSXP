@@ -1,1 +1,1 @@
-Chech the wiki
+Check the wiki
