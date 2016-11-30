@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="crypt.impl.ElGamalContractTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-11-30T07:20:08" hostname="blouin-X550LD" time="2.335">
+  <properties/>
+  <testcase name="test" classname="crypt.impl.ElGamalContractTest" time="2.335"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
