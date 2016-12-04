@@ -22,7 +22,8 @@ public class Tracker {
         String[] ips = new String[0];
         try {
             URL whatismyip = new URL("http://checkip.amazonaws.com");
-            BufferedReader in2 = new BufferedReader(new InputStreamReader(whatismyip.openStream()));            String ip = in2.readLine();
+            BufferedReader in2 = new BufferedReader(new InputStreamReader(whatismyip.openStream()));
+            String ip = in2.readLine();
 
             FileInputStream file = new FileInputStream(ipServeur);
             BufferedReader buff = new BufferedReader(new InputStreamReader(file));
