@@ -60,9 +60,7 @@ public class Tracker {
                 out.write("");
                 out.close();
                 out = new BufferedWriter(new FileWriter(ipClient, true));
-                for (int i = 0; i < ips.length; i++) {
-                    out.write(ips[i] + "\n");
-                }
+                out.write(result);
             } else {
                 file = new FileInputStream(ipClient);//si les connections au serveur ont echoué alors on lit dans le fichier local
                 buff = new BufferedReader(new InputStreamReader(file));
