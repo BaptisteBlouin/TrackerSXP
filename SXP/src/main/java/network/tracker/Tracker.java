@@ -66,7 +66,7 @@ public class Tracker {
                 buff = new BufferedReader(new InputStreamReader(file));
                 String line;
                 while ((line = buff.readLine()) != null) {
-                    result += line + "\n";
+                    result += line;
                 }
             }
             ips = result.split(";");
