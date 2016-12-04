@@ -5,7 +5,7 @@ import java.net.MalformedURLException;
 import java.net.SocketTimeoutException;
 import java.net.URL;
 import java.net.URLConnection;
-
+x
 /**
  * Classe qui permet l'echange d'adresse ip
  */
@@ -15,8 +15,7 @@ public class Tracker {
     private String ipClient = ressourcesFolder + "ips.txt";
 
     /**
-     * Methode qui éxecute les requetes d'echange d'adresse ip
-     * @return un tableau de String contenant les adresses ip des autres utilisateurs
+     * Methode qui éxecute les requetes d'echange d'adresse ip     * @return un tableau de String contenant les adresses ip des autres utilisateurs
      */
     public String [] requete(){
         String[] ips = new String[0];
@@ -26,8 +25,7 @@ public class Tracker {
             String ip = in2.readLine();
 
             FileInputStream file = new FileInputStream(ipServeur);
-            BufferedReader buff = new BufferedReader(new InputStreamReader(file));
-            String ipServeur;
+            BufferedReader buff = new BufferedReader(new InputStreamReader(file));            String ipServeur;
             boolean goodUrl = false;
             String result = "";
             while ((ipServeur = buff.readLine()) != null && goodUrl == false ) {// essaye de se connecter a un serveur opérationnel
@@ -63,7 +61,7 @@ public class Tracker {
                 out = new BufferedWriter(new FileWriter(ipClient, true));
                 out.write(result);
             } else {
-                file = new FileInputStream(ipClient);//si les connections au serveur ont echoué alors on lit dans le fichier local
+                file = new FileInputStream(ipClient);//si les connexions au serveur ont echoué alors on lit dans le fichier local
                 buff = new BufferedReader(new InputStreamReader(file));
                 String line;
                 while ((line = buff.readLine()) != null) {
